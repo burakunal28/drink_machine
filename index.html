@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Virtual Coffee Machine</title>
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+<body class="theme-light">
+  <div class="mdc-card">
+    <div class="mdc-typography--headline4">Virtual Coffee Machine</div>
+    <div id="balance" class="mdc-typography--headline6">Balance: 0 TL</div>
+    <div class="mdc-typography--subtitle1">Answer the question to earn money:</div>
+    <div id="mathQuestion" class="mdc-typography--headline6">What is ...?</div>
+    <div class="mdc-text-field mdc-text-field--filled">
+      <span class="mdc-text-field__ripple"></span>
+      <input id="mathAnswer" type="number" class="mdc-text-field__input">
+      <span class="mdc-floating-label">Your Answer</span>
+      <span class="mdc-line-ripple"></span>
+    </div>
+    <button class="mdc-button mdc-button--raised" onclick="checkAnswer()">
+      <div class="mdc-button__ripple"></div>
+      <span class="mdc-button__label">Submit</span>
+    </button>
+    <div class="mdc-typography--subtitle1">Make an order:</div>
+    <div class="mdc-select mdc-select--filled">
+      <div class="mdc-select__anchor">
+        <span id="order" class="mdc-select__selected-text"></span>
+      </div>
+      <div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth">
+        <ul class="mdc-list">
+          <li class="mdc-list-item mdc-list-item--selected" data-value="coffee">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Coffee - 5 TL</span>
+          </li>
+          <li class="mdc-list-item" data-value="tea">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Tea - 3 TL</span>
+          </li>
+          <li class="mdc-list-item" data-value="cupcake">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Cupcake - 7 TL</span>
+          </li>
+        </ul>
+      </div>
+      <span class="mdc-floating-label">Choose</span>
+      <span class="mdc-line-ripple"></span>
+    </div>
+    <button class="mdc-button mdc-button--raised" onclick="makeOrder()">
+      <div class="mdc-button__ripple"></div>
+      <span class="mdc-button__label">Order Now</span>
+    </button>
+    <div id="message" class="mdc-typography--headline6"></div>
+    <button class="mdc-button mdc-button--raised" onclick="changeTheme()">
+      <div class="mdc-button__ripple"></div>
+      <span class="mdc-button__label">Change Theme</span>
+    </button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

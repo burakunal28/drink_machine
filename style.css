@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 1em;
+  transition: background-color 0.5s ease;
+}
+
+body.theme-light {
+  background-color: #F3F3F3;
+  color: #000000;
+}
+
+body.theme-dark {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+body.theme-red {
+  background-color: #FF6347;
+  color: #FFFFFF;
+}
+
+body.theme-blue {
+  background-color: #87CEFA;
+  color: #000000;
+}
+
+.mdc-card {
+  padding: 20px;
+  margin: auto;
+  max-width: 500px;
+}
+
+.mdc-text-field, .mdc-select {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.mdc-typography--headline4,
+.mdc-typography--headline6,
+.mdc-typography--subtitle1 {
+  margin-bottom: 16px;
+}
+
+.mdc-button {
+  margin-bottom: 16px;
+}
